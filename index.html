@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
   <meta charset="UTF-8">
-  <title>Cakrawala Cyber</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Kontak | Cakrawala Cyber</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e8f5e9;
+      padding: 40px;
+    }
+    .container {
+      background-color: #ffffff;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2e7d32;
+    }
+    input, textarea, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #2e7d32;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1b5e20;
+    }
+  </style>
 </head>
 <body>
-  <h1>Selamat datang di Cakrawala Cyber!</h1>
-  <p>Website sedang dalam pengembangan.</p>
+  <div class="container">
+    <h2>Form Kontak</h2>
+    <form>
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="telepon">No. Telepon / WhatsApp:</label>
+      <input type="tel" id="telepon" name="telepon" required>
+
+      <label for="email">Email (opsional):</label>
+      <input type="email" id="email" name="email">
+
+      <label for="pesan">Pesan:</label>
+      <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
 </body>
 </html>
